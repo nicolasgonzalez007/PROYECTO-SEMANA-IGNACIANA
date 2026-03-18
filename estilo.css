@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(253, 218, 185);
+}
+header{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; 
+    text-align: center;
+    padding-top: 50px;
+    
+}
+header p{
+    font-size:small;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    color: #3e4142b4;
+}
+
+.main {
+    background: rgb(243, 240, 240);
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow:  10px 10px rgba(0, 0, 0, 0.055);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; 
+    text-align: center;
+}
+.titulo{
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-family: Montserrat;
+    color: #064772;
+    font-size: xx-large;
+    text-shadow: 3px 3px rgba(75, 113, 219, 0.219);
+   
+}
+span{
+    border-bottom: 2px solid #e0a531;
+    padding-bottom: 3px;
+    font-size: medium;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000000;
+    font-family: Montserrat;
+}
+
+input[type="email"], input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    margin-top: 5px;
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+input[type="email"]:hover, input[type="password"]:hover {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border:1px solid #04314e;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+.opciones {
+    overflow: hidden; 
+    margin-top: 15px;
+    line-height: 20px; 
+}
+
+.opciones label {
+    float: left;             
+    margin-top: 0;    
+    display: inline-block;
+    width: auto;      
+}
+
+.opciones a {
+    float: right;     
+    font-size: 12px;
+    text-decoration: none;
+    color: #1b6596;
+    margin-top: 2px;  
+    font-family: Montserrat;
+}
+
+#recordar {
+    display: inline;
+    width: auto;
+    margin: 0 5px 0 0;
+}
+
+.ispc{
+    font-size: large;
+    font-family: Montserrat;
+    color: #064772;
+}
+input[type="submit"]{
+    padding: 10px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    letter-spacing: 2px;
+    height: 40px;
+    width: 100%;
+    background-color: #06477281;
+    color: rgba(255, 255, 255, 0.479);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    padding: 10px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    letter-spacing: 2px;
+    height: 40px;
+    width: 100%;
+    background-color: #064772;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*PÁGINA DE AGRADECIMIENTO*/
+.titulo_pag2{
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    color: #064772;
+    text-align: center;
+    background-color: aliceblue;
+    height: 75px;
+    overflow: hidden;
+    margin-top: 0px;
+    font-size: 20px;
+    z-index: 1;
+}
+.agradecimiento{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    background-color: #adadad;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+a:link{
+    text-decoration: none;
+    color: #04314e;
+    padding: 0 15px; 
+    font-family: Roboto Condensed;
+    display: inline-block;
+    padding: 10px 15px;
+}
+a:hover{
+    text-decoration: none;
+    color: #04314e;
+    padding: 0 15px; 
+    font-family: Roboto Condensed;
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: 2px solid aliceblue;
+    padding-bottom: 5px;
+    
+}
+a:visited{
+    text-decoration: none;
+    color: #04314e;
+    padding: 0 15px; 
+    font-family: Roboto Condensed;
+    display: inline-block;
+    padding: 10px 15px;
+    
+    
+}
+.agradecer{
+    margin-top: 5%;
+    margin-left:35% ;
+    background-color: aliceblue;
+    width: 400px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow:  10px 10px rgba(0, 0, 0, 0.055);
+}
+select:active,select{
+    border-radius: 10px;
+    outline: none;
+    border:1px solid #04314e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+textarea{
+    resize: none;
+    width: 300px;
+    height: 100px;
+    outline: none;
+    border:1px solid #04314e;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.jesuita{
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color: aliceblue;
+    width: 50px;
+    height:150px;
+    padding: 10px;
+}
