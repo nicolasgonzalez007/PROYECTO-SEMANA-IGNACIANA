@@ -13,7 +13,7 @@
   function mostrar_alumnos(){ 
     $conexion = conectar();  
     
-    $sql = "SELECT idAlumno, nombre FROM Alumnos ORDER BY idAlumno ASC";
+    $sql = "SELECT idAlumno, nombre FROM Alumnos ";
     $resultado = $conexion->query($sql);	
     
     // Obtenemos el número total de filas
