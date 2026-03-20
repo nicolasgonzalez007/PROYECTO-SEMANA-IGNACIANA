@@ -1,3 +1,10 @@
+CREATE TABLE Alumnos(
+    idAlumno char(2) PRIMARY KEY,
+    nombre varchar(40),
+    );
+
+
+
 INSERT INTO Alumnos (idAlumno,nombre)
 VALUES 
     ('01','Nicolás'),
