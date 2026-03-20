@@ -13,7 +13,7 @@
   function mostrar_alumnos(){ 
     $conexion = conectar();  
     
-    $sql = "SELECT idAlumno, nombre FROM Alumnos ";
+    $sql = "SELECT idAlumno, nombre FROM Alumnos ";//Se podria poner Limit por si queremos mostrar un maximo de n alumnos
     $resultado = $conexion->query($sql);	
     
     // Obtenemos el número total de filas
