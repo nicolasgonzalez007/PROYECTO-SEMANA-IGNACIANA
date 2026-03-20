@@ -3,7 +3,7 @@
   define('USUARIO', 'root');
   define('PASSWORD', ''); 
   define('BBDD', 'prueba_sql');
-  // Función para conectar (se mantiene igual)
+  // Función para conectar 
   function conectar(){
     $conexion = new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
     $conexion->set_charset("utf8"); 
