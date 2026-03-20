@@ -28,5 +28,5 @@
     }
     $conexion->close();
   }
-  mostrar_alumnos();
+  
 ?>
