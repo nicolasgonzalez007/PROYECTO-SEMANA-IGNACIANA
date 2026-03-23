@@ -1,9 +1,9 @@
 
 <?php
-  define('SERVIDOR', 'localhost');
-  define('USUARIO', 'root');
-  define('PASSWORD', ''); 
-  define('BBDD', 'prueba_sql');
+  define('SERVIDOR', '13.1daw.esvirgua.com');
+  define('USUARIO', '13@1daw.esvirgua.com');
+  define('PASSWORD', 'OOhWU9g&C+dM8)vo'); 
+  define('BBDD', 'user1daw_13');
   // Función para conectar (se mantiene igual)
   function conectar(){
     $conexion = new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
