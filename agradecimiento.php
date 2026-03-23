@@ -25,6 +25,7 @@
       echo '</p>';
     }
     $conexion->close();
+      return $total_filas;
   }
 ?>
 
