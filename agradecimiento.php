@@ -20,7 +20,7 @@
    
    while($fila=$resultado->fetch_array())
     {
-      echo <p>
+      echo '<p>'
       echo 'ID: ' . $fila["idAlumno"] . '- Alumno: ' . $fila["nombre"]; 
       echo '</p>';
     }
