@@ -10,9 +10,21 @@
         $conexion->set_charset("utf8"); 
         return $conexion;
     }
+    $conexion = conectar();
     //Para guardar el email y contraseña en unas variables
-    $correo=$_POST["email"];
+    $usuario=$_POST["usuario"];
     $contrasenia=$_POST["password"];
+    $sql = "SELECT * FROM Alumno WHERE nombre = '$usuario' AND contrasenia = '$contrasenia'";
+    $resultado = $conexion->query($sql);
+
+    if ($resultado->num_rows > 0) {
+        header("Location: agradecimiento copy.php"); 
+    } else {
+        echo "Usuario o contraseña incorrecto";
+    }
+
+    $conexion->close();
+
 
 
 ?>
