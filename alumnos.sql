@@ -1,6 +1,6 @@
 CREATE TABLE Alumnos(
     idAlumno char(2) PRIMARY KEY,
-    nombre varchar(40),
+    nombre varchar(40)
     );
 
 
