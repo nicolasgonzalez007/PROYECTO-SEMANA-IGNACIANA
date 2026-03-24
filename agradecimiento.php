@@ -20,9 +20,9 @@
    
    while($fila=$resultado->fetch_array())
     {
-      echo '<p>'
-      echo 'ID: ' . $fila["idAlumno"] . '- Alumno: ' . $fila["nombre"]; 
-      echo '</p>';
+        echo '<option value="' . $fila["idAlumno"] . '">';
+        echo $fila["nombre"];
+        echo '</option>';
     }
     $conexion->close();
   }
