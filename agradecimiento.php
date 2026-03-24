@@ -10,7 +10,7 @@
   }
   function mostrar_alumnos(){ 
     $conexion = conectar();  
-    $sql = "SELECT idAlumno, nombre FROM Alumnos ";
+    $sql = "SELECT idAlumno, nombre FROM Alumno ";
     $resultado = $conexion->query($sql);	
     // Obtenemos el número total de filas
     $total_filas = $resultado->num_rows;
