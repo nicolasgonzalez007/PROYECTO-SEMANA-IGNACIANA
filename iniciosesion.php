@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     define('SERVIDOR', 'localhost');
     define('USUARIO', 'root');
     define('PASSWORD', ''); 
@@ -16,17 +16,15 @@
     $contrasenia=$_POST["password"];
     $sql = "SELECT * FROM Alumno WHERE nombre = '$usuario' AND contrasenia = '$contrasenia'";
     $resultado = $conexion->query($sql);
-
-    if ($resultado->num_rows > 0) {
-        header("Location: agradecimiento copy.php"); 
-    } else {
-        echo "Usuario o contraseña incorrecto";
+    if ($resultado->num_rows > 0) 
+    {
+        header("Location:agradecimiento.php"); 
+    } 
+    else 
+    {
+        header("Location:login.html");
     }
-
     $conexion->close();
-
-
-
 ?>
 
 
