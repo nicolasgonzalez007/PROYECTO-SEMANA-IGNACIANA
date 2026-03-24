@@ -1,4 +1,5 @@
 <?php
+    session_start();
     define('SERVIDOR', 'localhost');
     define('USUARIO', 'root');
     define('PASSWORD', ''); 
@@ -35,9 +36,9 @@
         <img src="jesuitas.png">
     </div>
     <nav>
-        <a href="#">Agradecer</a>
-        <a href="#">Recibir</a>
-        <a href="#">Cerrar sesión</a>
+        <a href="">Agradecer</a>
+        <a href="recibidos.html">Recibir</a>
+        <a href="login.html">Cerrar sesión</a>
     </nav>   
     <div class="agradecer">
         <form action="#" method="post">
