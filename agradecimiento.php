@@ -1,9 +1,6 @@
 <?php
     session_start();
-    define('SERVIDOR', 'localhost');
-    define('USUARIO', 'root');
-    define('PASSWORD', ''); 
-    define('BBDD', 'prueba_sql');
+    require 'configdb.php';
     function conectar(){
     $conexion = new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
     $conexion->set_charset("utf8"); 
@@ -38,10 +35,10 @@
     <nav>
         <a href="">Agradecer</a>
         <a href="recibidos.html">Recibir</a>
-        <a href="login.html">Cerrar sesión</a>
+        <a href="cerrar_sesion.php">Cerrar sesión</a>
     </nav>   
     <div class="agradecer">
-        <form action="#" method="post">
+        <form action="enviar_mensaje.php" method="post">
             <label for="nombres">PARA</label>
             <select id="nombres" name="nombres">
                 <?php
