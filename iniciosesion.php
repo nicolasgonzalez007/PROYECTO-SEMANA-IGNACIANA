@@ -1,9 +1,6 @@
 <?php
-    session_start();
-    define('SERVIDOR', 'localhost');
-    define('USUARIO', 'root');
-    define('PASSWORD', ''); 
-    define('BBDD', 'prueba_sql');
+    session_start();//ES como una 'cookie' ,cuando se crea una sesion se crea un "id" que se guarda en el servidor y al inciar sesion busca ese id.Lo contrario seria el session_destroy() que borra
+    require 'configdb.php';
     function conectar()
     {
         $conexion = new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
@@ -18,11 +15,12 @@
     $resultado = $conexion->query($sql);
     if ($resultado->num_rows > 0) 
     {
+        $_SESSION['idAlumno'] = $fila['idAlumno'];
         header("Location:agradecimiento.php"); 
     } 
     else 
     {
-        header("Location:login.html");
+        header("Location:iniciosesion.html");
     }
     $conexion->close();
 ?>
