@@ -9,8 +9,14 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     background-color: rgb(253, 218, 185);
+    background-image: url("./Imagenes/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    image-rendering: -webkit-optimize-contrast;
 }
 header{
     width: 100%;
@@ -22,17 +28,17 @@ header{
 }
 header p{
     font-size:small;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 100;
-    color: #212222f5;
+    color: #ffffff;
 }
 
 .main {
-    background: rgb(243, 240, 240);
+    background: rgb(221, 213, 233);
     margin-top: 20px;
     padding: 30px;
     border-radius: 15px;
-    box-shadow:  10px 10px rgba(0, 0, 0, 0.055);
+    box-shadow:   5px 5px 5px 5px rgba(255, 255, 255, 0.329);
     box-sizing: border-box;
     width: 100%;
     max-width: 400px;
@@ -43,13 +49,14 @@ header p{
     letter-spacing: 2px;
     margin-bottom: 5px;
     font-family: Montserrat;
-    color: #064772;
+    color: #f2f0f7;
     font-size: xx-large;
     text-shadow: 3px 3px rgba(75, 113, 219, 0.219);
    
 }
 span{
-    border-bottom: 2px solid #e0a531;
+    color: #ffffff;
+    border-bottom: 2px solid #9351e9;
     padding-bottom: 3px;
     font-size: medium;
 }
@@ -58,8 +65,8 @@ label {
     text-align: left;
     margin-top: 15px;
     font-size: 14px;
-    color: #000000;
-    font-family: Google Fonts;
+    color: #11105c;
+    font-family: Montserrat;
     font-weight: bold;
 }
 
@@ -69,7 +76,7 @@ input[type="text"], input[type="password"] {
     padding: 12px;
     outline: none;
     margin-top: 5px;
-    border: 1px solid #adadad;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
@@ -79,7 +86,7 @@ input[type="text"]:hover, input[type="password"]:hover {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
-    border:1px solid #04314e;
+    border:1px solid #ba87e4;
     border-radius: 8px;
     outline: none;
     box-sizing: border-box;
@@ -104,6 +111,7 @@ input[type="text"]:hover, input[type="password"]:hover {
     color: #1b6596;
     margin-top: 2px;  
     font-family: Montserrat;
+    font-weight: bold;
 }
 
 #recordar {
@@ -123,7 +131,7 @@ input[type="submit"]{
     letter-spacing: 2px;
     height: 40px;
     width: 100%;
-    background-color: #06477281;
+    background-color: #0e046981;
     color: rgba(255, 255, 255, 0.479);
     border-radius: 10px;
     border: none;
@@ -135,7 +143,7 @@ input[type="submit"]:hover{
     letter-spacing: 2px;
     height: 40px;
     width: 100%;
-    background-color: #064772;
+    background-color: #130563;
     color: white;
     border-radius: 10px;
     border: none;
@@ -146,9 +154,9 @@ input[type="submit"]:hover{
 .titulo_pag2{
     letter-spacing: 2px;
     font-family: Montserrat;
-    color: #064772;
+    color: #10096e;
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(141, 113, 243);
     height: 75px;
     overflow: hidden;
     margin-top: 0px;
@@ -161,14 +169,14 @@ input[type="submit"]:hover{
 }
 nav{
     width: 100%;
-    background-color: #adadad;
+    background-color: #3328c9;
     text-align: center;
     overflow: hidden;
     z-index: 1;
 }
 a:link{
     text-decoration: none;
-    color: #04314e;
+    color: #ffffff;
     padding: 0 15px; 
     font-family: Roboto Condensed;
     display: inline-block;
@@ -176,7 +184,7 @@ a:link{
 }
 a:hover{
     text-decoration: none;
-    color: #04314e;
+    color: #ffffff;
     padding: 0 15px; 
     font-family: Roboto Condensed;
     display: inline-block;
@@ -187,7 +195,7 @@ a:hover{
 }
 a:visited{
     text-decoration: none;
-    color: #04314e;
+    color: #ffffff;
     padding: 0 15px; 
     font-family: Roboto Condensed;
     display: inline-block;
@@ -198,11 +206,11 @@ a:visited{
 .agradecer{
     margin-top: 5%;
     margin-left:35% ;
-    background-color: antiquewhite;
+    background-color: rgb(226, 221, 233);
     width: 400px;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+    box-shadow: 5px 5px 5px rgba(228, 223, 223, 0.363);
 }
 select:active,select{
     border-radius: 10px;
@@ -215,6 +223,7 @@ select:active,select{
     resize: none;
     width: 300px;
     height: 100px;
+    padding: 5px;
     outline: none;
     border:1px solid #04314e;
     border-radius: 10px;
@@ -225,10 +234,10 @@ select:active,select{
 .jesuita{
     float: left; 
     margin-left: 30%; 
-    background-color: antiquewhite;
+    background-color: rgb(252, 245, 237);
     margin-top: 50px;
     width: 150px;
-    height: 200px;
+    height: 300px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #00000038;
@@ -237,10 +246,14 @@ select:active,select{
     float: left; 
     margin-left: 5%; 
     margin-top: 50px;
-    background-color: antiquewhite;
+    background-color: rgb(243, 239, 234);
     padding: 10px; 
     height: 300px;
     width: 350px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #00000038;
+}
+.eusebio{
+    width: 80%;
+    border-radius: 10px;
 }
