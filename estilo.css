@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Mountains+of+Christmas:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100%;
+    background-color: rgb(253, 218, 185);
+    background-image: url("./Imagenes/memphis-frame-pink-green-abstract-colorful-doodle-memphis-drawings.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    image-rendering: -webkit-optimize-contrast;
+}
+header {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+header p {
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    color: #e05e3d;
+}
+.main {
+    background: rgb(233, 183, 147);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.329);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+.titulo {
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-family: Montserrat;
+    color: #f4b35e;
+    font-size: 50px;
+    text-shadow: 1px 1px rgba(243, 111, 85, 0.392);
+}
+span {
+    color: #efbe98;
+    border-bottom: 2px solid #f34b4b;
+    padding-bottom: 3px;
+    font-size: medium;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #00566B;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+input[type="text"], input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    margin-top: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+input[type="text"]:hover, input[type="password"]:hover {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ebaa64;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+.opciones {
+    overflow: hidden;
+    margin-top: 15px;
+    line-height: 20px;
+}
+.opciones label {
+    float: left;
+    margin-top: 0;
+    display: inline-block;
+    width: auto;
+}
+.opciones a {
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+    color: #1b6596;
+    margin-top: 2px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+#recordar {
+    display: inline;
+    width: auto;
+    margin: 0 5px 0 0;
+}
+.ispc {
+    font-size: large;
+    font-family: Montserrat;
+    color: #f34b4b;
+}
+input[type="submit"] {
+    padding: 10px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    letter-spacing: 2px;
+    margin-top:20px ;
+    height: 40px;
+    width: 100%;
+    background-color: #00566b9a;
+    color: rgba(255, 255, 255, 0.479);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    padding: 10px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    letter-spacing: 2px;
+    height: 40px;
+    width: 100%;
+    background-color: #00566B;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*PÁGINA DE AGRADECIMIENTO*/
+.titulo_pag2 {
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    color: #f66111;
+    text-align: center;
+    background-color: rgb(240, 202, 145);
+    height: auto;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 20px;
+    z-index: 1;
+}
+.agra2{
+    color: #f7732c;
+    border-bottom: 2px solid #f34b4b;
+    padding-bottom: 3px;
+    font-size: medium;
+}
+.agra3{
+    color: #f7732c;
+    border-bottom: 2px solid #f34b4b;
+    padding-bottom: 3px;
+    font-size: medium;
+}
+.agradecimiento {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    width: 100%;
+    background-color: #cd8e6f;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Roboto Condensed;
+    display: inline-block;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Roboto Condensed;
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: 2px solid aliceblue;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Roboto Condensed;
+    display: inline-block;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.agradecer {
+    margin: 5% auto;
+    background-color: rgb(171, 191, 205);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgba(228, 223, 223, 0.363);
+}
+select {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #04314e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px;
+}
+#mensaje {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #04314e;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor{
+    width: 520px;
+    margin: 30px auto;
+}
+
+.jesuita {
+    float: left;
+    background-color: rgb(171, 191, 205);
+    width: 150px;
+    min-height: 350px;
+    color: #4a4c4ef7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000038;
+}
+
+.recibimiento {
+    float: right;
+    background-color: rgb(171, 191, 205);
+    padding: 10px;
+    width: 320px;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000038;
+}
+.eusebio {
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid wheat;
+}
+p:not(.frase){/*Esto es para excluir*/
+    font-family: Montserrat;
+}
